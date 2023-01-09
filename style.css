@@ -67,7 +67,7 @@ header ul li {
 }
 
 #SecondSect {
-    height: 350px;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -78,16 +78,15 @@ header ul li {
 }
 
 #SecondSect p{
-    position: relative;
     font-size: 25px;
-    left: 50px;
-    margin: 0 180px 0 0;
+    margin-left: 50px;
 }
 
 #Items {
     padding: 50px 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: #195018;
     color: rgb(255, 255, 255);
 }
@@ -137,4 +136,68 @@ footer {
 footer p {
     color: white;
     margin: 0 10px;
+}
+
+#SideImg {
+    display: inline;
+    float: right;
+    height: 400px;
+    margin: 0 50px 0 20px;
+}
+
+@media (max-width: 1310px) {
+    #SecondSect {
+        height: 600px;
+    }
+}
+
+@media (max-width: 1050px) {
+    #SecondSect {
+        height: 700px;
+    }
+}
+
+@media (max-width: 875px) {
+    #SecondSect {
+        height: 800px;
+    }
+}
+
+@media (max-width: 810px) {
+    #SecondSect {
+        height: 950px;
+    }
+}
+
+@media (max-width: 660px) {
+    #SecondSect {
+        height: 1100px;
+    }
+}
+
+@media (max-width: 580px) {
+    #SecondSect {
+        height: 1250px;
+    }
+}
+
+@media (max-width: 560px) {
+    #SecondSect div {
+        display: flex;
+        justify-content: center;
+    }
+    #SecondSect img {
+        position: relative;
+        left: 40px;
+        float: none;
+    }
+    #SecondSect {
+        height: 1250px;
+    }
+}
+
+@media (max-width: 580px) {
+    #SecondSect {
+        display: none;
+    }
 }
